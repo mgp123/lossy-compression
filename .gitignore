@@ -2,3 +2,4 @@ myenv
 linear_algebra/projection_images/*
 *__pycache__
 .vscode
+channels/*

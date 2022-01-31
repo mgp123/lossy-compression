@@ -1,6 +1,7 @@
 from  PIL import Image
 import numpy as np
 import math
+import sys
 
 def get_bitmap(path):
     img = Image.open(path)
@@ -8,12 +9,12 @@ def get_bitmap(path):
     return imgArray
 
 
-basis = np.load("linear_algebra/basis32x32.npy")
+basis = np.load(sys.argv[1])
 
 basis_dim = int(math.sqrt(basis.shape[0]/3))
 print(basis_dim)
 
-path = "/home/matias/Downloads/Charly2.jpg"
+path = sys.argv[2]
 image = get_bitmap(path)
 print(image.shape)
 padding = (
