@@ -24,7 +24,7 @@ To perform color coding compression use ```color_code.py```
     --verbose        print encoding statistics
 
 ### JPEG coding
-To perform color coding compression use ```jpeg_code.py```
+To perform jpeg compression use ```jpeg_code.py```
 
     usage: jpeg_code.py [-h] [--verbose] {encode,decode} ... path_in path_out
 
