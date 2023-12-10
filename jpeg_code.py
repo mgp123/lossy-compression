@@ -9,7 +9,6 @@ if __name__ == "__main__":
     parser.add_argument("path_out", help="path for saving output")
     parser.add_argument("--verbose", help="print encoding statistics", default = False, const=True, action='store_const')	
 
-    # create the parser for the "bar" command
     parser_a = subparsers.add_parser('encode')
     parser_a.add_argument('--quant', type=int, default=-45, help="level of quantization applied to the image. Lower values indicate less quantization. Use integers ranging from -60 to 30 for good results")
     parser_a.add_argument('--sub_rows', type=int,  default = 2, help="chrominance subsampling in the direction of the rows")
